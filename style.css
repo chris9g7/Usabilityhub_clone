@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* creatings variable */
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+
+    font-size: 2.5rem;
+
+}
+
+h2 {
+    font-size: 2rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* utility classes */
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
+
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* top-banner */
+
+.banner-text {
+    color: #fff;
+    text-align: center;
+}
+
+.top-banner {
+    background-image: url(assests/asset\ 32.png);
+    background-color: #e74694;
+    background-size: 300px;
+
+
+}
+
+/* nav-bar */
+
+.companylogo img {
+    width: 200px;
+}
+
+.companylogo>a {
+
+    background-color: rgb(221, 218, 218);
+    border: 0px solid #fff;
+    height: 50px;
+    border-radius: 3px;
+    text-align: end;
+    color: #000;
+    margin: 0 20px;
+    padding: 1rem;
+
+}
+
+.main-nav {
+    align-content: space-between;
+
+}
+
+.nav-link {
+    flex-basis: 730px;
+}
+
+.nav-link ul {
+    justify-content: end;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.hoverlink {
+
+    color: #000;
+}
+
+.hoverlink:hover {
+    color: var(--accent-color);
+}
+
+.primarybtn {
+    border: 1px solid rgb(196, 194, 194);
+    border-radius: 4px;
+    padding: 12.5px 25px;
+    font-weight: 600;
+
+}
+
+
+.secondarybtn {
+    border: 1px solid rgb(196, 194, 194);
+    border-radius: 4px;
+    padding: 12.5px 25px;
+    font-weight: 600;
+    margin-left: -10px;
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.primarybtn:hover {
+    border-color: var(--accent-color);
+
+}
+
+.secondarybtn:hover {
+    background-color: var(--accent-color-dark);
+    color: #fff;
+}
+
+/* hero section */
+
+header {
+
+    padding: 50px;
+}
+
+.header-section {
+
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 60px;
+}
+
+
+.header-left p {
+    padding-top: 15px;
+}
+
+.header-left a {
+    margin: 30px 5px;
+    padding: 15px 30px;
+}
+
+
+
+.header-right img {
+    width: 600px;
+}
+
+/* companies-section */
+
+
+.companyimages img {
+
+    width: 135px;
+}
+
+.companyimages {
+    padding-top: 20px;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.companies-section p {
+    text-align: center;
+    color: #000;
+    font-size: 1rem;
+
+}
+
+#size {
+    width: 50px;
+}
+
+/* features-section */
+
+.features-section {
+    margin-top: 150px;
+    background-image: url(assests/asset\ 41.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feature-header {
+
+    text-align: center;
+}
+
+.feature-card {
+    text-align: center;
+
+}
+
+.feature-card p,
+h3,
+a {
+    margin-top: 10px;
+
+
+}
+
+.feature-card a {
+    margin-top: 20px;
+
+}
+
+
+.feature-card img {
+    width: 50px;
+}
+
+.feature-card-first {
+    margin-top: 50px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-card-second {
+    margin-top: 50px;
+}
+
+/* big feature section */
+
+.firstpart img {
+    width: 500px;
+}
+
+.main-feature-section {
+    gap: 150px;
+
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.secondpart .special {
+    width: 150px;
+    margin-top: 20px;
+}
+
+
+.secondpart h2 {
+    margin-top: 10px;
+
+}
+
+.black {
+    color: #000;
+}
+
+.nick img {
+    width: 50px;
+    display: inline;
+    margin-right: 6px;
+    float: left;
+
+}
+
+.nick h4 {
+    margin-top: 20px;
+
+}
+
+
+.main-feature-section2 {
+    gap: 50px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    margin-top: 150px;
+
+}
+
+/* examples-section */
+
+.examples-header {
+    text-align: center;
+
+
+}
+
+.examples-area {
+
+    width: 23%;
+    position: relative;
+    min-height: 320px;
+    background-color: #000;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9)),
+        url(assests/asset\ 36.jpeg);
+    background-size: cover;
+
+}
+
+
+.examples-header {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.examples-area:hover {
+
+    box-shadow: gray 0 0 10px;
+}
+
+
+.examples-area:nth-child(2) {
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9)),
+        url(assests/asset\ 37.jpeg);
+    background-size: cover;
+
+}
+
+.examples-area:nth-child(3) {
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9)),
+        url(assests/asset\ 38.jpeg);
+    background-size: cover;
+
+}
+
+.examples-area:nth-child(4) {
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9)),
+        url(assests/asset\ 39.jpeg);
+    background-size: cover;
+
+}
+
+
+
+.card-text {
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    text-align: start;
+
+
+}
+
+/* cta-section */
+
+.cta-section {
+    margin-top: 60px;
+    background-color: #183b56;
+    max-width: 1550px;
+    height: 650px;
+    flex-wrap: wrap;
+}
+
+.white li {
+    color: #b9cde4;
+    list-style: disc;
+    padding: 10px;
+    justify-content: space-between;
+    width: 20ch;
+}
+
+.contentt {
+    text-align: start;
+    margin: -100px 80px;
+    padding: 20px;
+}
+
+
+.contentt p {
+    text-align: start;
+    margin: 30px 0;
+    color: #577592;
+    width: 50ch;
+}
+
+.contentt h1,
+h3 {
+    color: #333333;
+
+}
+
+.contentt-img img {
+    max-width: 600px;
+
+
+}
+
+.contentt a {
+
+    border-color: #1d69a3;
+    margin-left: 10px;
+}
+
+.join {
+    text-align: center;
+    margin: 150px;
+
+
+
+}
+
+.join a {
+    margin-top: 30px;
+    padding: 18px 35px;
+    border-color: var(--accent-color);
+
+}
+
+.join h1 {
+    margin-bottom: 50px;
+}
+
+
+/* footer section */
+
+.footer-section {
+    background-color: #ebf2fa;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+.hublogo img {
+    margin-bottom: 240px;
+    margin-left: 100px;
+    width: 200px;
+}
+
+.list {
+    align-items: center;
+    gap: 100px;
+    justify-items: baseline;
+}
+
+.line1,
+.line2,
+.line3 {
+    color: var(--secondary-text-color);
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+.list h4 {
+
+    font-size: 1.9rem;
+    color: #183b56;
+    margin-bottom: 15px;
+}
+
+
+/* subfooter */
+
+.subfooter {
+    background-color: #b9cde4;
+    height: 60px;
+    text-align: center;
+    gap: 120px;
+}
+
+.footer a {
+
+    color: #183b56;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.footer a:hover {
+
+    color: var(--accent-color);
+}
+
+.your {
+    text-align: center;
+    margin-right: 100px;
+    gap: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.footer {
+
+    margin-left: 400px;
+}
+
+.contact {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--accent-color);
+    background-image: url(assests/asset\ 42.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center;
+    background-size:30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+   
+}
+
